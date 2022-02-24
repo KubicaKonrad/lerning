@@ -1,112 +1,113 @@
 <!DOCTYPE html>
 
-<HTML lang="pl"
+<html lang="pl">
+
 <head>
- <meta charset="UTF-8" />
- <META name="DESCRIPTION" content="OPIS STRONY"/> 
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https: //fonts.googleapis.com/css2? family= Indie+Kwiat i display=swap" rel="stylesheet">
- <Link rel="stylesheet" href="body.css">
-    <div class="container"> 
- <title>Cznne wulkany na świecie</title> 
+    <meta charset="UTF-8" />
+    <META name="DESCRIPTION" content="OPIS STRONY" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2? family= Indie+Kwiat i display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="body.css">
+    <title>Cznne wulkany na świecie</title>
 </head>
+
 <body>
-    
-<header>
-    <div class="title">
-       <h1>cznne wulkany na świecie</h1>
+    <div class="container">
+        <header>
+            <div class="title">
+                <h1>cznne wulkany na świecie</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="home"><a href="Nauka programowania HTML.html"><span>START</span></a></li>
+                    <li class="wulkan"><a href="wulkan.html"><span>Wulkan</span></a></li>
+                    <li class="omnie"><a href="about.html"><span>O mnie</span></a></li>
+                    <li class="Register"><a href="register.html"><span>Rejestracja</span></a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content">
+            <section>
+                <form action="#" method="post" autocomplete="off">
+                    <div class="row">
+                        <label for="name">Imie i Nazwisko</label>
+                        <input id="name" type="text" required autofocus="true"></imput>
+                    </div>
+                    <div class="row">
+                        <label for="email">Adres e-mail</label>
+                        <input id="email" type="email" required>
+                    </div>
+                    <div class="password">
+                        <label for="password">Hasło</lable>
+                            <input id="password" type="password" required>
+                    </div>
+                    <div class="row">
+                        <label for="date">Data urodzenia</label>
+                        <input id="date" type="date">
+                    </div>
+                    <div class="row">
+                        <label for="gander">Płeć</label>
+                        <select id="gander">
+                            <option>Mężczyzna</option>
+                            <option>Kobieta</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label for="region">Województwo</label>
+                        <input id="region" type="text" list="regions">
+                        <datalist id="regions">
+                            <option value="dolnośląskie"></option>
+                            <option value="kujawsko-pomorskie"></option>
+                            <option value="lubelskie"></option>
+                            <option value="łódzkie"></option>
+                            <option value="małopolskie"></option>
+                            <option value="mazowieckie"></option>
+                            <option value="opolskie"></option>
+                            <option value="podkarpackie"></option>
+                            <option value="podlaskie"></option>
+                            <option value="pomorskie"></option>
+                            <option value="śląskie"></option>
+                            <option value="świetokrzyskie"></option>
+                            <option value="warmińsko-mazurskie"></option>
+                            <option value="wielkopolskie"></option>
+                            <option value="zachodniopomorskie"></option>
+                        </datalist>
+                    </div>
+                    <div class="row">
+                        <label for="code">Kod podcztowy</label>
+                        <input id="code" type="text" pattern="^\d{2}-\d{3}$" aria-placeholder="XX-XXX">
+                    </div>
+                    <diV class="row">
+                        <label for="description">O mnie</label>
+                        <textarea id="description" maxlength="500" rows="3"></textarea>
+                    </diV>
+                    <div class="row">
+                        <label for="avatar">Zdjecie</label>
+                        <input id="avatar" type="file">
+                    </div>
+                    <div class="row">
+                        <input id="rules" type="checkbox" required>
+                    </div>
+                    <div class="row">
+                        <input type="submit">
+
+                    </div>
+                </form>
+
+            </section>
+        </div>
+
+
+        <footer id="stopka">
+
+            wszelkie prawa zastrzerzoen <br>
+            kocham rodziców &cop
+
+
+        </footer>
+
     </div>
-    <nav>
-        <ul>
-            <li class="home"><a href="Nauka programowania HTML.html"><span>START</span></a></li>
-            <li class="wulkan"><a href="wulkan.html"><span>Wulkan</span></a></li>
-            <li class="omnie"><a href="about.html"><span>O mnie</span></a></li>
-            <li class="Register"><a href="register.html"><span>Rejestracja</span></a></li>
-        </ul>
-    </nav>
-</header>
- <div class="content">
-   <section>
-       <form action="#" method="post" autocomplete="off">
-          <div class="row">
-              <label for="name">Imie i Nazwisko</label>
-              <input id="name" type="text" required autofocus="true"></imput>
-          </div> 
-          <div class="row">
-              <label for="email">Adres e-mail</label>
-              <input id="email" type="email" required>
-          </div>
-          <div class="password">
-              <label for="password">Hasło</lable>
-              <input id="password" type="password" required>
-          </div>
-          <div class="row">
-              <label for="date">Data urodzenia</label>
-              <input id="date" type="date">
-          </div>
-          <div class="row">
-              <label for="gander">Płeć</label>
-              <select id="gander">
-                  <option>Mężczyzna</option>
-                  <option>Kobieta</option>
-              </select>
-          </div>
-          <div class="row">
-              <label for="region">Województwo</label>
-              <input id="region" type="text" list="regions">
-              <datalist id="regions">
-                  <option value="dolnośląskie"></option>
-                  <option value="kujawsko-pomorskie"></option>
-                  <option value="lubelskie"></option>
-                  <option value="łódzkie"></option>
-                  <option value="małopolskie"></option>
-                  <option value="mazowieckie"></option>
-                  <option value="opolskie"></option>
-                  <option value="podkarpackie"></option>
-                  <option value="podlaskie"></option>
-                  <option value="pomorskie"></option>
-                  <option value="śląskie"></option>
-                  <option value="świetokrzyskie"></option>
-                  <option value="warmińsko-mazurskie"></option>
-                  <option value="wielkopolskie"></option>
-                  <option value="zachodniopomorskie"></option>
-              </datalist>
-          </div>
-           <div class="row">
-               <label for="code">Kod podcztowy</label>
-               <input id="code" type="text" pattern="^\d{2}-\d{3}$" aria-placeholder="XX-XXX">
-           </div>
-           <diV class="row">
-               <label for="description">O mnie</label>
-               <textarea id="description" maxlength="500" rows="3"></textarea>
-           </diV>
-           <div class="row">
-               <label for="avatar">Zdjecie</label>
-               <input id="avatar" type="file">
-           </div>
-           <div class="row">
-               <input id="rules" type="checkbox" required>
-           </div>
-           <div class="row">
-               <input type="submit">
-            
-           </div>
-       </form>
-
-   </section>
- </div>
-
-
-<footer id="stopka">
-   
-    wszelkie  prawa  zastrzerzoen <br>
-    kocham rodziców &cop
-     
-    
-</footer>
-
-</div class="container"> 
 </body>
-</html>
 
+</html>
