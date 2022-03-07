@@ -8,10 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https: //fonts.googleapis.com/css2? family= Indie+Kwiat i display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="register.css">
     <title>Cznne wulkany na świecie</title>
 </head>
-// yolo kurwa , zmienia się  :D
 <body>
     <div class="container">
         <header>
@@ -23,7 +22,7 @@
                     <li class="home"><a href="Nauka programowania HTML.html"><span>START</span></a></li>
                     <li class="wulkan"><a href="wulkan.html"><span>Wulkan</span></a></li>
                     <li class="omnie"><a href="about.html"><span>O mnie</span></a></li>
-                    <li class="Register"><a href="register.html"><span>Rejestracja</span></a></li>
+                    <la class="Register"><a href="register.html"><span>Rejestracja</span></a></la>
                 </ul>
             </nav>
         </header>
@@ -38,9 +37,9 @@
                         <label for="email">Adres e-mail</label>
                         <input id="email" type="email" required>
                     </div>
-                    <div class="password">
+                    <div class="row">
                         <label for="password">Hasło</lable>
-                            <input id="password" type="password" required>
+                        <input id="password" type="password" required>
                     </div>
                     <div class="row">
                         <label for="date">Data urodzenia</label>
@@ -76,17 +75,18 @@
                     </div>
                     <div class="row">
                         <label for="code">Kod podcztowy</label>
-                        <input id="code" type="text" pattern="^\d{2}-\d{3}$" aria-placeholder="XX-XXX">
+                        <input id="code" type="text" pattern="^\d{2}-\d{3}$" placeholder="XX-XXX">
                     </div>
-                    <diV class="row">
+                    <div class="row">
                         <label for="description">O mnie</label>
                         <textarea id="description" maxlength="500" rows="3"></textarea>
-                    </diV>
+                    </div>
                     <div class="row">
                         <label for="avatar">Zdjecie</label>
                         <input id="avatar" type="file">
                     </div>
                     <div class="row">
+                        <span>Akceptuje regulamin</span>
                         <input id="rules" type="checkbox" required>
                     </div>
                     <div class="row">
